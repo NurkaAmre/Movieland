@@ -42,7 +42,8 @@ function App() {
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
-            <MovieCard movie={movie} />
+            <MovieCard movie={movie} id={movie.id}
+                key={movie.id} />
           ))}
         </div>
       ) : (
